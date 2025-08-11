@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filistinli Gazetecilerin Anısına | In Memory of Palestinian Journalists</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Filistinli Gazetecilerin Anısına</h1>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#journalists">Gazeteciler</a></li>
+                        <li><a href="#statistics">İstatistikler</a></li>
+                        <li><a href="#timeline">Zaman Çizelgesi</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <button class="lang-btn active" onclick="setLanguage('tr')" data-lang="tr">TR</button>
+                        <button class="lang-btn" onclick="setLanguage('ar')" data-lang="ar">عر</button>
+                        <button class="lang-btn" onclick="setLanguage('en')" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-quote-container">
+                    <blockquote class="hero-quote">
+                        "Gazetecilerin uluslararası koruma altında olduğundan dair bahsedilen her şey slogan olmaktan öteye geçmiyor."
+                    </blockquote>
+                    <cite class="quote-author">- Filistinli Gazeteci</cite>
+                </div>
+                <h2>Unutmayacağız, Unutturmayacağız</h2>
+                <p class="hero-subtitle">Gazetecilik mesleğini icra ederken hayatlarını kaybeden Filistinli gazetecilerin anısına...</p>
+                <div class="stats-preview">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-journalists">100+</span>
+                        <span class="stat-label">Şehit Gazeteci</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2023-2024</span>
+                        <span class="stat-label">Dönem</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journalists" class="journalists-section">
+            <div class="container">
+                <h2>Gazeteciler</h2>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Gazeteci ara...">
+                </div>
+                <div class="journalists-grid" id="journalists-grid">
+                    <!-- JavaScript ile doldurulacak -->
+                </div>
+            </div>
+        </section>
+
+        <section id="statistics" class="statistics-section">
+            <div class="container">
+                <h2>İstatistikler</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Toplam Kayıp</h3>
+                        <span class="big-number" id="total-deaths">100+</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2023 Yılında</h3>
+                        <span class="big-number" id="deaths-2023">60+</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2024 Yılında</h3>
+                        <span class="big-number" id="deaths-2024">40+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2>Zaman Çizelgesi</h2>
+                <div class="timeline" id="timeline">
+                    <!-- JavaScript ile doldurulacak -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Basın özgürlüğü için mücadele eden tüm gazetecilerin anısına...</p>
+            <p class="dedication">Gazetecilik mesleği asla suç değildir.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
